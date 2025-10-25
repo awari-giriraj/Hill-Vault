@@ -1,0 +1,19 @@
+<!-- Placeholder Icon SVG for VaultMind -->
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#6366f1" rx="80"/>
+  
+  <!-- Lock Body -->
+  <rect x="156" y="240" width="200" height="180" rx="20" fill="#ffffff"/>
+  
+  <!-- Lock Shackle -->
+  <path d="M 196 240 L 196 180 Q 196 120 256 120 Q 316 120 316 180 L 316 240" 
+        stroke="#ffffff" stroke-width="40" fill="none" stroke-linecap="round"/>
+  
+  <!-- Keyhole -->
+  <circle cx="256" cy="300" r="20" fill="#6366f1"/>
+  <rect x="246" y="300" width="20" height="60" fill="#6366f1" rx="10"/>
+  
+  <!-- Shine Effect -->
+  <circle cx="220" cy="200" r="15" fill="rgba(255,255,255,0.3)"/>
+</svg>

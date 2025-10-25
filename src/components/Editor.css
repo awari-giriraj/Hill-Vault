@@ -1,0 +1,232 @@
+.editor {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+body.dark .editor-toolbar {
+  border-bottom-color: var(--border-dark);
+}
+
+.editor-toolbar-left,
+.editor-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-select {
+  padding: 10px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background: white;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+body.dark .category-select {
+  background: #374151;
+  color: var(--text-dark);
+  border-color: var(--border-dark);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.editor-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.editor-title {
+  font-size: 32px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  color: var(--text-light);
+}
+
+body.dark .editor-title {
+  color: var(--text-dark);
+}
+
+.editor-title::placeholder {
+  color: var(--text-gray);
+}
+
+.tags-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tags-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+
+body.dark .tags-input {
+  background: #374151;
+  border-color: var(--border-dark);
+}
+
+.tags-input svg {
+  color: var(--text-gray);
+  font-size: 16px;
+}
+
+.tags-input input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+body.dark .tags-input input {
+  color: var(--text-dark);
+}
+
+.tags-input input::placeholder {
+  color: var(--text-gray);
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.editor-textarea {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.8;
+  resize: none;
+  background: white;
+  color: var(--text-light);
+}
+
+body.dark .editor-textarea {
+  background: #374151;
+  color: var(--text-dark);
+  border-color: var(--border-dark);
+}
+
+.editor-textarea::placeholder {
+  color: var(--text-gray);
+}
+
+.markdown-preview {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  background: white;
+  overflow-y: auto;
+  line-height: 1.8;
+}
+
+body.dark .markdown-preview {
+  background: #374151;
+  border-color: var(--border-dark);
+  color: var(--text-dark);
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin: 24px 0 12px;
+  font-weight: 700;
+}
+
+.markdown-preview h1 { font-size: 32px; }
+.markdown-preview h2 { font-size: 24px; }
+.markdown-preview h3 { font-size: 20px; }
+
+.markdown-preview p {
+  margin: 12px 0;
+}
+
+.markdown-preview code {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+body.dark .markdown-preview code {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.markdown-preview pre {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+body.dark .markdown-preview pre {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.markdown-preview pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.markdown-preview li {
+  margin: 6px 0;
+}
+
+.markdown-preview blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 16px;
+  margin: 12px 0;
+  color: var(--text-gray);
+  font-style: italic;
+}
+
+.markdown-preview a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.markdown-preview a:hover {
+  text-decoration: underline;
+}
