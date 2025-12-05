@@ -36,8 +36,8 @@ const useStore = create((set) => ({
   })),
   
   updateEntry: (updatedEntry) => set((state) => ({
-    entries: state.entries.map(e => e.id === updatedEntry.id ? updatedEntry : e),
-    selectedEntry: state.selectedEntry?.id === updatedEntry.id ? updatedEntry : state.selectedEntry
+    entries: state.entries.map(e => e.id === updatedEntry.id ? updatedEntry : e)
+    // Don't auto-update selectedEntry - let components manage it explicitly
   })),
   
   removeEntry: (id) => set((state) => ({

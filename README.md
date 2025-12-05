@@ -1,10 +1,10 @@
-# VaultMind - Secure Offline Creative Vault
+# HillVault - Secure Offline Creative Vault
 
-![VaultMind](public/icon.png)
+![HillVault](public/icon.png)
 
 ## 🔒 Overview
 
-VaultMind is a secure, offline-first desktop application designed for creators who value privacy and security. Store your ideas, drafts, sketches, and creative works with military-grade encryption—completely offline, no cloud, no telemetry.
+HillVault is a secure, offline-first desktop application designed for creators who value privacy and security. Store your ideas, drafts, sketches, and creative works with military-grade encryption—completely offline, no cloud, no telemetry.
 
 ## ✨ Features
 
@@ -31,6 +31,17 @@ VaultMind is a secure, offline-first desktop application designed for creators w
 - **Brush Controls** - Adjustable size and eraser tool
 - **Undo/Redo** - Full drawing history support
 
+### 🔑 Password Manager (NEW)
+- **Secure Storage** - AES-256-GCM encrypted password vault
+- **Password Generator** - Cryptographically secure random passwords
+- **Strength Analyzer** - Real-time password strength evaluation
+- **9 Categories** - Email, Banking, Social, Work, Gaming, etc.
+- **Smart Organization** - Search, filter, and categorize passwords
+- **Statistics Dashboard** - Visual insights into password health
+- **Auto-fill Support** - Copy passwords to clipboard
+- **Age Tracking** - Alerts for passwords 90+ days old
+- **Breach Detection** - Common password pattern detection
+
 ### 💾 Data Management
 - **Local SQLite Database** - Fast, reliable local storage
 - **Encrypted Backups** - Export to `.vault` files
@@ -54,7 +65,7 @@ VaultMind is a secure, offline-first desktop application designed for creators w
 1. **Clone the repository**
 ```bash
 git clone <repository-url>
-cd VaultMind
+cd HillVault
 ```
 
 2. **Install dependencies**
@@ -91,7 +102,7 @@ Built applications will be in the `release/` directory.
 ## 📁 Project Structure
 
 ```
-VaultMind/
+HillVault/
 ├── electron/
 │   ├── main.js          # Main Electron process
 │   └── preload.js       # Secure IPC bridge
@@ -142,7 +153,7 @@ VaultMind/
 ## 🎯 Usage Guide
 
 ### First-Time Setup
-1. Launch VaultMind
+1. Launch HillVault
 2. Create a strong password (min 8 characters)
 3. Confirm password
 4. Vault is created with AES-256 encryption
@@ -192,9 +203,9 @@ startAutoLockTimer(5); // Change to desired minutes
 ### Database Location
 Default: `{userData}/VaultData/`
 
-On Windows: `C:\Users\{Username}\AppData\Roaming\vaultmind\VaultData\`
-On macOS: `~/Library/Application Support/vaultmind/VaultData/`
-On Linux: `~/.config/vaultmind/VaultData/`
+On Windows: `C:\Users\{Username}\AppData\Roaming\hillvault\VaultData\`
+On macOS: `~/Library/Application Support/hillvault/VaultData/`
+On Linux: `~/.config/hillvault/VaultData/`
 
 ## 🧪 Security Audit
 
@@ -306,7 +317,7 @@ MIT License - See LICENSE file for details
 
 ## ⚠️ Disclaimer
 
-VaultMind is provided as-is. While we implement industry-standard encryption and security practices, no system is 100% secure. Users are responsible for:
+HillVault is provided as-is. While we implement industry-standard encryption and security practices, no system is 100% secure. Users are responsible for:
 - Choosing strong passwords
 - Keeping backups of important data
 - Understanding the panic wipe feature

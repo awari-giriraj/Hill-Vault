@@ -1,5 +1,5 @@
 import useStore from '../store';
-import { FaHome, FaLightbulb, FaEdit, FaPalette, FaCheckCircle, FaPlus } from 'react-icons/fa';
+import { FaHome, FaLightbulb, FaEdit, FaPalette, FaCheckCircle, FaPlus, FaFolderOpen, FaKey } from 'react-icons/fa';
 import './Sidebar.css';
 
 function Sidebar() {
@@ -23,10 +23,18 @@ function Sidebar() {
     setCurrentView('sketchpad');
   };
 
+  const handleFileExplorer = () => {
+    setCurrentView('fileExplorer');
+  };
+
+  const handlePasswordManager = () => {
+    setCurrentView('passwordManager');
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>VaultMind</h2>
+        <h2>HillVault</h2>
       </div>
 
       <div className="sidebar-actions">
@@ -35,6 +43,12 @@ function Sidebar() {
         </button>
         <button className="btn btn-secondary sidebar-btn" onClick={handleNewSketch}>
           <FaPalette /> New Sketch
+        </button>
+        <button className="btn btn-success sidebar-btn" onClick={handleFileExplorer}>
+          <FaFolderOpen /> File Explorer
+        </button>
+        <button className="btn btn-warning sidebar-btn" onClick={handlePasswordManager}>
+          <FaKey /> Passwords
         </button>
       </div>
 

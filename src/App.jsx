@@ -6,6 +6,8 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Editor from './components/Editor';
 import Sketchpad from './components/Sketchpad';
+import FileExplorer from './components/FileExplorer';
+import PasswordManager from './components/PasswordManager';
 import './App.css';
 
 function App() {
@@ -32,7 +34,7 @@ function App() {
     return (
       <div className="loading-screen">
         <div className="loading-spinner"></div>
-        <p>Loading VaultMind...</p>
+        <p>Loading HillVault...</p>
       </div>
     );
   }
@@ -50,6 +52,8 @@ function App() {
           {currentView === 'dashboard' && <Dashboard />}
           {currentView === 'editor' && <Editor />}
           {currentView === 'sketchpad' && <Sketchpad />}
+          {currentView === 'fileExplorer' && <FileExplorer />}
+          {currentView === 'passwordManager' && <PasswordManager />}
         </div>
       </div>
     </div>

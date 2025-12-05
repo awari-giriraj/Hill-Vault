@@ -26,6 +26,32 @@ body.dark .editor-toolbar {
   gap: 12px;
 }
 
+.auto-save-indicator {
+  font-size: 12px;
+  color: #f59e0b;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease-in;
+}
+
+body.dark .auto-save-indicator {
+  color: #fbbf24;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .category-select {
   padding: 10px 16px;
   border: 1px solid var(--border-light);
